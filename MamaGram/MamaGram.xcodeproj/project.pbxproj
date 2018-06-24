@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		221D8E3F47B6C843C3867084 /* Pods_MamaGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873F025CE34D63DB89F1EEB4 /* Pods_MamaGram.framework */; };
+		CF6C04A820DD35EE00A18E4A /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C04A720DD35EE00A18E4A /* FBViewController.swift */; };
+		CF6C04AA20DD4B5E00A18E4A /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */; };
 		CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2F6E220D3109000837117 /* AppDelegate.swift */; };
-		CFD2F6E520D3109000837117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2F6E420D3109000837117 /* ViewController.swift */; };
 		CFD2F6E820D3109000837117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2F6E620D3109000837117 /* Main.storyboard */; };
 		CFD2F6EA20D3109000837117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD2F6E920D3109000837117 /* Assets.xcassets */; };
 		CFD2F6ED20D3109000837117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2F6EB20D3109000837117 /* LaunchScreen.storyboard */; };
+		CFEB6D5C20DD6F59005C7611 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB6D5B20DD6F59005C7611 /* HomeViewController.swift */; };
 		CFF67AC620D9560C00E85E89 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF67AC520D9560C00E85E89 /* Bolts.framework */; };
 		CFF67AC820D9562400E85E89 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF67AC720D9562400E85E89 /* FBSDKCoreKit.framework */; };
 		CFF67ACA20D9563600E85E89 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF67AC920D9563600E85E89 /* FBSDKShareKit.framework */; };
@@ -23,13 +25,15 @@
 		227C0D7A7D8DA41E07294A4B /* Pods-MamaGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamaGram/Pods-MamaGram.debug.xcconfig"; sourceTree = "<group>"; };
 		691D85BEF22AB96A4923636C /* Pods-MamaGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamaGram/Pods-MamaGram.release.xcconfig"; sourceTree = "<group>"; };
 		873F025CE34D63DB89F1EEB4 /* Pods_MamaGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6C04A720DD35EE00A18E4A /* FBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
+		CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		CFD2F6DF20D3109000837117 /* MamaGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD2F6E220D3109000837117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFD2F6E420D3109000837117 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFD2F6E720D3109000837117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFD2F6E920D3109000837117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD2F6EC20D3109000837117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFD2F6EE20D3109000837117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEB6D5B20DD6F59005C7611 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CFF67AC520D9560C00E85E89 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Documents/FacebookSDK/FacebookSDKs-iOS-4/Bolts.framework"; sourceTree = "<group>"; };
 		CFF67AC720D9562400E85E89 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../../../Documents/FacebookSDK/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		CFF67AC920D9563600E85E89 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../../../Documents/FacebookSDK/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
@@ -83,11 +87,13 @@
 			isa = PBXGroup;
 			children = (
 				CFD2F6E220D3109000837117 /* AppDelegate.swift */,
-				CFD2F6E420D3109000837117 /* ViewController.swift */,
 				CFD2F6E620D3109000837117 /* Main.storyboard */,
 				CFD2F6E920D3109000837117 /* Assets.xcassets */,
 				CFD2F6EB20D3109000837117 /* LaunchScreen.storyboard */,
 				CFD2F6EE20D3109000837117 /* Info.plist */,
+				CF6C04A720DD35EE00A18E4A /* FBViewController.swift */,
+				CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */,
+				CFEB6D5B20DD6F59005C7611 /* HomeViewController.swift */,
 			);
 			path = MamaGram;
 			sourceTree = "<group>";
@@ -229,8 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD2F6E520D3109000837117 /* ViewController.swift in Sources */,
+				CF6C04AA20DD4B5E00A18E4A /* FeedsViewController.swift in Sources */,
+				CF6C04A820DD35EE00A18E4A /* FBViewController.swift in Sources */,
 				CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */,
+				CFEB6D5C20DD6F59005C7611 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
