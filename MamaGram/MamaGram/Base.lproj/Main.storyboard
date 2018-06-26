@@ -29,7 +29,7 @@
         <!--Home-->
         <scene sceneID="0Za-vh-8QY">
             <objects>
-                <viewController title="Home" id="uDQ-oG-AKx" customClass="HomeViewController" customModule="MamaGram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="Home" id="uDQ-oG-AKx" customClass="HomeViewController" customModule="MamaGram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Hm-nA-imT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,28 +66,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-6L-77K">
-                                <rect key="frame" x="99" y="318.5" width="176" height="30"/>
-                                <state key="normal" title="Click to choose Facebook"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qio-n2-9U6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="74"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="9HM-kb-Q38" kind="show" id="b5t-g1-CED"/>
+                                    <outlet property="dataSource" destination="BT9-LZ-pWU" id="U6p-oN-hmI"/>
+                                    <outlet property="delegate" destination="BT9-LZ-pWU" id="brR-0q-arn"/>
                                 </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1I5-zP-akh">
+                                <rect key="frame" x="97" y="381" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="I'm here! Can you see me?"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ixy-6L-77K" firstAttribute="centerY" secondItem="J8A-3j-NAD" secondAttribute="centerY" id="5w1-df-2s0"/>
-                            <constraint firstItem="Ixy-6L-77K" firstAttribute="centerX" secondItem="J8A-3j-NAD" secondAttribute="centerX" id="fy3-1I-hY5"/>
+                            <constraint firstItem="qio-n2-9U6" firstAttribute="top" secondItem="qHA-QX-8y3" secondAttribute="top" id="1yY-wM-1TJ"/>
+                            <constraint firstItem="qHA-QX-8y3" firstAttribute="bottom" secondItem="qio-n2-9U6" secondAttribute="bottom" constant="529" id="SKg-h4-mFi"/>
+                            <constraint firstItem="qio-n2-9U6" firstAttribute="leading" secondItem="qHA-QX-8y3" secondAttribute="leading" id="WwF-Wu-L9v"/>
+                            <constraint firstItem="qHA-QX-8y3" firstAttribute="trailing" secondItem="qio-n2-9U6" secondAttribute="trailing" id="YbT-Zv-IeH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qHA-QX-8y3"/>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="qio-n2-9U6" id="mOg-bf-wza"/>
+                        <outlet property="tableViewHeightConstraint" destination="SKg-h4-mFi" id="uNB-nv-Md5"/>
                         <segue destination="9HM-kb-Q38" kind="show" identifier="Feeds" id="X6F-is-UOR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpw-80-d1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="115"/>
+            <point key="canvasLocation" x="520.79999999999995" y="114.69265367316342"/>
         </scene>
         <!--Facebook-->
         <scene sceneID="MsI-EN-VXU">
@@ -106,7 +116,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="X6F-is-UOR"/>
         <segue reference="K2d-6P-bcI"/>
     </inferredMetricsTieBreakers>
 </document>

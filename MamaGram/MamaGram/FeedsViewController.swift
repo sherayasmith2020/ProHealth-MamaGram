@@ -8,19 +8,49 @@
 
 import UIKit
 
-class FeedsViewController: UIViewController {
-
+class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    private let feedNames = ["Facebook", "Twitter", "Instagram"]
+    private let status = ["Not Connected", "Not Connected", "Not Connected"]
+    private let photoArr = [UIImage(named: "FBLogo"), UIImage(named: "TwitterLogo"), UIImage(named: "InstagramLogo")]
+    let identifier = "FeedsIdentifier"
+    
+    @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var tableView: UITableView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(FeedsCell.self, forCellReuseIdentifier: identifier)
+        let xib = UINib(nibName: "FeedsCell", bundle: nil)
+        tableView.register(xib, forCellReuseIdentifier: identifier)
+        tableView.rowHeight = 65
         
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableViewHeightConstraint.constant = tableView.contentSize.height
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return feedNames.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! FeedsCell
+        //let rowData = feedList[indexPath.row]
+        cell.nameLabel.text = feedNames[indexPath.row]
+        cell.subtitleLabel.text = status[indexPath.row]
+        cell.photo.image = photoArr[indexPath.row]
+        
+        return cell
     }
     
 
