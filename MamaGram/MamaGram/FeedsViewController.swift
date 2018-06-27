@@ -14,6 +14,7 @@ class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewD
     private let status = ["Not Connected", "Not Connected", "Not Connected"]
     private let photoArr = [UIImage(named: "FBLogo"), UIImage(named: "TwitterLogo"), UIImage(named: "InstagramLogo")]
     let identifier = "FeedsIdentifier"
+    let segueIdentifiers = ["A", "B", "C"]
     
     @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     
@@ -53,16 +54,22 @@ class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segueIdentifiers[indexPath.row], sender: self)
+    }
 
-    /*
+/*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        
     }
-    */
+ */
+    
     
 
     

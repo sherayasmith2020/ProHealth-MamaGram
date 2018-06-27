@@ -10,6 +10,8 @@
 		221D8E3F47B6C843C3867084 /* Pods_MamaGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873F025CE34D63DB89F1EEB4 /* Pods_MamaGram.framework */; };
 		CF2EF70120E2A9E9006C8A26 /* FeedsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF70020E2A9E9006C8A26 /* FeedsCell.swift */; };
 		CF2EF70320E2AC7E006C8A26 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */; };
+		CF2EF70520E2DB2D006C8A26 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF70420E2DB2D006C8A26 /* TwitterViewController.swift */; };
+		CF2EF70720E2DB45006C8A26 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF70620E2DB45006C8A26 /* InstagramViewController.swift */; };
 		CF6C04A820DD35EE00A18E4A /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C04A720DD35EE00A18E4A /* FBViewController.swift */; };
 		CF6C04AA20DD4B5E00A18E4A /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */; };
 		CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2F6E220D3109000837117 /* AppDelegate.swift */; };
@@ -29,6 +31,8 @@
 		873F025CE34D63DB89F1EEB4 /* Pods_MamaGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2EF70020E2A9E9006C8A26 /* FeedsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsCell.swift; sourceTree = "<group>"; };
 		CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsCell.xib; sourceTree = "<group>"; };
+		CF2EF70420E2DB2D006C8A26 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		CF2EF70620E2DB45006C8A26 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		CF6C04A720DD35EE00A18E4A /* FBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
 		CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		CFD2F6DF20D3109000837117 /* MamaGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,10 +100,12 @@
 				CFD2F6EB20D3109000837117 /* LaunchScreen.storyboard */,
 				CFD2F6EE20D3109000837117 /* Info.plist */,
 				CF6C04A720DD35EE00A18E4A /* FBViewController.swift */,
+				CF2EF70620E2DB45006C8A26 /* InstagramViewController.swift */,
+				CF2EF70420E2DB2D006C8A26 /* TwitterViewController.swift */,
+				CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */,
+				CF2EF70020E2A9E9006C8A26 /* FeedsCell.swift */,
 				CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */,
 				CFEB6D5B20DD6F59005C7611 /* HomeViewController.swift */,
-				CF2EF70020E2A9E9006C8A26 /* FeedsCell.swift */,
-				CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */,
 			);
 			path = MamaGram;
 			sourceTree = "<group>";
@@ -242,8 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2EF70520E2DB2D006C8A26 /* TwitterViewController.swift in Sources */,
 				CF6C04AA20DD4B5E00A18E4A /* FeedsViewController.swift in Sources */,
 				CF6C04A820DD35EE00A18E4A /* FBViewController.swift in Sources */,
+				CF2EF70720E2DB45006C8A26 /* InstagramViewController.swift in Sources */,
 				CF2EF70120E2A9E9006C8A26 /* FeedsCell.swift in Sources */,
 				CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */,
 				CFEB6D5C20DD6F59005C7611 /* HomeViewController.swift in Sources */,
