@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8D7-sA-9DE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1402" y="115"/>
+            <point key="canvasLocation" x="-2159" y="115"/>
         </scene>
         <!--Notes-->
         <scene sceneID="uP6-wr-u19">
@@ -92,7 +92,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gps-g0-Rdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="-744.3778110944528"/>
+            <point key="canvasLocation" x="-420" y="-744"/>
         </scene>
         <!--Title-->
         <scene sceneID="tpD-5i-D9E">
@@ -148,13 +148,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHu-s2-sv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ppm-r9-jml" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1228" y="-744.3778110944528"/>
+            <point key="canvasLocation" x="521" y="-744"/>
         </scene>
         <!--Home-->
         <scene sceneID="0Za-vh-8QY">
             <objects>
                 <viewController storyboardIdentifier="Home" title="Home" id="uDQ-oG-AKx" customClass="HomeViewController" customModule="MamaGram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Hm-nA-imT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbP-jU-6jX">
+                                <rect key="frame" x="96" y="318" width="183" height="30"/>
+                                <state key="normal" title="Click here to access Notes"/>
+                                <connections>
+                                    <segue destination="npK-YK-5RS" kind="show" id="Uzw-bE-epC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cbP-jU-6jX" firstAttribute="centerX" secondItem="2Hm-nA-imT" secondAttribute="centerX" id="8gh-Jp-lqp"/>
+                            <constraint firstItem="cbP-jU-6jX" firstAttribute="top" secondItem="Ndu-ft-ZCb" secondAttribute="top" constant="254" id="T3H-6k-NAB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ndu-ft-ZCb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6i3-kC-IyY">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="eAd-H6-brQ">
+                            <connections>
+                                <segue destination="dXK-sc-nhs" kind="show" id="HM1-Vy-GQd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0d3-jl-JUA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1396" y="115"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="ca2-OI-Hgx">
+            <objects>
+                <viewController id="dXK-sc-nhs" customClass="SettingsViewController" customModule="MamaGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0v-Z2-oL2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -165,31 +200,18 @@
                                     <segue destination="BT9-LZ-pWU" kind="show" id="pGC-eo-N06"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbP-jU-6jX">
-                                <rect key="frame" x="96" y="266" width="183" height="30"/>
-                                <state key="normal" title="Click here to access Notes"/>
-                                <connections>
-                                    <segue destination="npK-YK-5RS" kind="show" id="Uzw-bE-epC"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c7g-dY-6pk" firstAttribute="centerX" secondItem="2Hm-nA-imT" secondAttribute="centerX" id="Czy-vf-W18"/>
-                            <constraint firstItem="cbP-jU-6jX" firstAttribute="centerX" secondItem="c7g-dY-6pk" secondAttribute="centerX" id="Dl0-Sy-KiA"/>
-                            <constraint firstItem="cbP-jU-6jX" firstAttribute="top" secondItem="Ndu-ft-ZCb" secondAttribute="top" constant="202" id="T3H-6k-NAB"/>
-                            <constraint firstItem="c7g-dY-6pk" firstAttribute="centerY" secondItem="2Hm-nA-imT" secondAttribute="centerY" id="lsw-0q-2g2"/>
+                            <constraint firstItem="c7g-dY-6pk" firstAttribute="centerX" secondItem="f0v-Z2-oL2" secondAttribute="centerX" id="53I-wN-bor"/>
+                            <constraint firstItem="c7g-dY-6pk" firstAttribute="centerY" secondItem="f0v-Z2-oL2" secondAttribute="centerY" id="rjW-hX-eB7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Ndu-ft-ZCb"/>
+                        <viewLayoutGuide key="safeArea" id="39x-xw-mbR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6i3-kC-IyY"/>
-                    <connections>
-                        <segue destination="BT9-LZ-pWU" kind="show" identifier="Home" id="K2d-6P-bcI"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0d3-jl-JUA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsj-g8-dy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567.20000000000005" y="114.69265367316342"/>
+            <point key="canvasLocation" x="-420" y="115"/>
         </scene>
         <!--Feeds-->
         <scene sceneID="EDA-FO-wSL">
@@ -242,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdJ-oi-z5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2352.8000000000002" y="-540.17991004497753"/>
+            <point key="canvasLocation" x="1414" y="-562"/>
         </scene>
         <!--Facebook-->
         <scene sceneID="MsI-EN-VXU">
@@ -276,7 +298,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K2d-6P-bcI"/>
         <segue reference="BVb-lF-Srw"/>
     </inferredMetricsTieBreakers>
 </document>
