@@ -12,6 +12,12 @@
 		CF2EF70320E2AC7E006C8A26 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */; };
 		CF2EF70520E2DB2D006C8A26 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF70420E2DB2D006C8A26 /* TwitterViewController.swift */; };
 		CF2EF70720E2DB45006C8A26 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF70620E2DB45006C8A26 /* InstagramViewController.swift */; };
+		CF2EF73320E979FC006C8A26 /* MamaGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF73120E979FC006C8A26 /* MamaGram.xcdatamodeld */; };
+		CF2EF75620EA6226006C8A26 /* ListNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF75520EA6226006C8A26 /* ListNotesTableViewController.swift */; };
+		CF2EF75820EA65BB006C8A26 /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF75720EA65BB006C8A26 /* ListNotesTableViewCell.swift */; };
+		CF2EF75A20EA7627006C8A26 /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF75920EA7627006C8A26 /* DisplayNoteViewController.swift */; };
+		CF2EF75E20EA7EDE006C8A26 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF75D20EA7EDE006C8A26 /* Date+convertToString.swift */; };
+		CF2EF76020EA8A00006C8A26 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF75F20EA8A00006C8A26 /* CoreDataHelper.swift */; };
 		CF6C04A820DD35EE00A18E4A /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C04A720DD35EE00A18E4A /* FBViewController.swift */; };
 		CF6C04AA20DD4B5E00A18E4A /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */; };
 		CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2F6E220D3109000837117 /* AppDelegate.swift */; };
@@ -33,6 +39,12 @@
 		CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsCell.xib; sourceTree = "<group>"; };
 		CF2EF70420E2DB2D006C8A26 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		CF2EF70620E2DB45006C8A26 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		CF2EF73220E979FC006C8A26 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CF2EF75520EA6226006C8A26 /* ListNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewController.swift; sourceTree = "<group>"; };
+		CF2EF75720EA65BB006C8A26 /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
+		CF2EF75920EA7627006C8A26 /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
+		CF2EF75D20EA7EDE006C8A26 /* Date+convertToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
+		CF2EF75F20EA8A00006C8A26 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		CF6C04A720DD35EE00A18E4A /* FBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
 		CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		CFD2F6DF20D3109000837117 /* MamaGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,18 +106,24 @@
 		CFD2F6E120D3109000837117 /* MamaGram */ = {
 			isa = PBXGroup;
 			children = (
-				CFD2F6E220D3109000837117 /* AppDelegate.swift */,
-				CFD2F6E620D3109000837117 /* Main.storyboard */,
-				CFD2F6E920D3109000837117 /* Assets.xcassets */,
-				CFD2F6EB20D3109000837117 /* LaunchScreen.storyboard */,
 				CFD2F6EE20D3109000837117 /* Info.plist */,
+				CFD2F6E220D3109000837117 /* AppDelegate.swift */,
+				CF2EF75F20EA8A00006C8A26 /* CoreDataHelper.swift */,
+				CF2EF75920EA7627006C8A26 /* DisplayNoteViewController.swift */,
 				CF6C04A720DD35EE00A18E4A /* FBViewController.swift */,
-				CF2EF70620E2DB45006C8A26 /* InstagramViewController.swift */,
-				CF2EF70420E2DB2D006C8A26 /* TwitterViewController.swift */,
-				CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */,
 				CF2EF70020E2A9E9006C8A26 /* FeedsCell.swift */,
 				CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */,
 				CFEB6D5B20DD6F59005C7611 /* HomeViewController.swift */,
+				CF2EF70620E2DB45006C8A26 /* InstagramViewController.swift */,
+				CF2EF75720EA65BB006C8A26 /* ListNotesTableViewCell.swift */,
+				CF2EF75520EA6226006C8A26 /* ListNotesTableViewController.swift */,
+				CF2EF70420E2DB2D006C8A26 /* TwitterViewController.swift */,
+				CFD2F6E920D3109000837117 /* Assets.xcassets */,
+				CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */,
+				CFD2F6EB20D3109000837117 /* LaunchScreen.storyboard */,
+				CFD2F6E620D3109000837117 /* Main.storyboard */,
+				CF2EF73120E979FC006C8A26 /* MamaGram.xcdatamodeld */,
+				CF2EF75D20EA7EDE006C8A26 /* Date+convertToString.swift */,
 			);
 			path = MamaGram;
 			sourceTree = "<group>";
@@ -248,9 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2EF75620EA6226006C8A26 /* ListNotesTableViewController.swift in Sources */,
+				CF2EF75A20EA7627006C8A26 /* DisplayNoteViewController.swift in Sources */,
+				CF2EF75E20EA7EDE006C8A26 /* Date+convertToString.swift in Sources */,
 				CF2EF70520E2DB2D006C8A26 /* TwitterViewController.swift in Sources */,
 				CF6C04AA20DD4B5E00A18E4A /* FeedsViewController.swift in Sources */,
 				CF6C04A820DD35EE00A18E4A /* FBViewController.swift in Sources */,
+				CF2EF73320E979FC006C8A26 /* MamaGram.xcdatamodeld in Sources */,
+				CF2EF75820EA65BB006C8A26 /* ListNotesTableViewCell.swift in Sources */,
+				CF2EF76020EA8A00006C8A26 /* CoreDataHelper.swift in Sources */,
 				CF2EF70720E2DB45006C8A26 /* InstagramViewController.swift in Sources */,
 				CF2EF70120E2A9E9006C8A26 /* FeedsCell.swift in Sources */,
 				CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */,
@@ -441,6 +465,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF2EF73120E979FC006C8A26 /* MamaGram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF2EF73220E979FC006C8A26 /* Model.xcdatamodel */,
+			);
+			currentVersion = CF2EF73220E979FC006C8A26 /* Model.xcdatamodel */;
+			path = MamaGram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CFD2F6D720D3109000837117 /* Project object */;
 }
