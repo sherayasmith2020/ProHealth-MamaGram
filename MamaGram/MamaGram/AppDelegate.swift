@@ -19,8 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let navigationAppearance = UINavigationBar.appearance()
         navigationAppearance.barTintColor = UIColor(red: 88/255.0, green: 216/255.0, blue: 87/255.0, alpha: 1.0)
+        let strokeTextAttributes: [NSAttributedStringKey: Any] = [
+            .foregroundColor: UIColor.white]
+       
+        navigationAppearance.titleTextAttributes =  strokeTextAttributes
         let button = UIBarButtonItem.appearance()
         button.tintColor = UIColor.white
+        
        
         return true
     }
