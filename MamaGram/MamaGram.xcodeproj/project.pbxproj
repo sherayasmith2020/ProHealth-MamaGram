@@ -23,6 +23,7 @@
 		CF2EF7B320F3FA9D006C8A26 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF7B220F3FA9D006C8A26 /* RecordingViewController.swift */; };
 		CF2EF7B720F3FB63006C8A26 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF7B620F3FB63006C8A26 /* CameraViewController.swift */; };
 		CF2EF7B920F4049A006C8A26 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF7B820F4049A006C8A26 /* MoreViewController.swift */; };
+		CF2EF7BB20F79A19006C8A26 /* ViewSMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF7BA20F79A19006C8A26 /* ViewSMViewController.swift */; };
 		CF6C04A820DD35EE00A18E4A /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C04A720DD35EE00A18E4A /* FBViewController.swift */; };
 		CF6C04AA20DD4B5E00A18E4A /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */; };
 		CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2F6E220D3109000837117 /* AppDelegate.swift */; };
@@ -55,6 +56,7 @@
 		CF2EF7B220F3FA9D006C8A26 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		CF2EF7B620F3FB63006C8A26 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		CF2EF7B820F4049A006C8A26 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		CF2EF7BA20F79A19006C8A26 /* ViewSMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSMViewController.swift; sourceTree = "<group>"; };
 		CF6C04A720DD35EE00A18E4A /* FBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
 		CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		CFD2F6DF20D3109000837117 /* MamaGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				CF2EF70420E2DB2D006C8A26 /* TwitterViewController.swift */,
 				CF2EF70020E2A9E9006C8A26 /* FeedsCell.swift */,
 				CF6C04A920DD4B5E00A18E4A /* FeedsViewController.swift */,
+				CF2EF7BA20F79A19006C8A26 /* ViewSMViewController.swift */,
 			);
 			name = "Social Media";
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 		CF2EF7B520F3FB40006C8A26 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				CF2EF7B620F3FB63006C8A26 /* CameraViewController.swift */,
 			);
 			name = Camera;
 			sourceTree = "<group>";
@@ -169,7 +173,6 @@
 				CFD2F6E620D3109000837117 /* Main.storyboard */,
 				CF2EF73120E979FC006C8A26 /* MamaGram.xcdatamodeld */,
 				CF2EF7AD20F3EE8A006C8A26 /* TabBarController.swift */,
-				CF2EF7B620F3FB63006C8A26 /* CameraViewController.swift */,
 				CF2EF7B820F4049A006C8A26 /* MoreViewController.swift */,
 			);
 			path = MamaGram;
@@ -328,6 +331,7 @@
 				CF2EF76020EA8A00006C8A26 /* CoreDataHelper.swift in Sources */,
 				CF2EF76220EC0DC6006C8A26 /* SettingsViewController.swift in Sources */,
 				CF2EF70720E2DB45006C8A26 /* InstagramViewController.swift in Sources */,
+				CF2EF7BB20F79A19006C8A26 /* ViewSMViewController.swift in Sources */,
 				CF2EF70120E2A9E9006C8A26 /* FeedsCell.swift in Sources */,
 				CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */,
 				CFEB6D5C20DD6F59005C7611 /* HomeViewController.swift in Sources */,
