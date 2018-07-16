@@ -220,7 +220,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Play_big" translatesAutoresizingMaskIntoConstraints="NO" id="5tD-eO-rXe">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="microphone" translatesAutoresizingMaskIntoConstraints="NO" id="5tD-eO-rXe">
                                                 <rect key="frame" x="38" y="15" width="110" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -618,9 +618,9 @@
         <image name="Camera_big" width="128" height="128"/>
         <image name="Event_big" width="128" height="128"/>
         <image name="Home" width="32" height="32"/>
-        <image name="Play_big" width="128" height="128"/>
         <image name="Write" width="32" height="32"/>
         <image name="Write_big" width="128" height="128"/>
+        <image name="microphone" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BVb-lF-Srw"/>
