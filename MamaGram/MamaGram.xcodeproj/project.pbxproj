@@ -473,10 +473,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6WL8WMVL66;
+				DEVELOPMENT_TEAM = WY2J36F3ST;
 				INFOPLIST_FILE = MamaGram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reu.MamaGram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reu.MamaGram1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,10 +489,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6WL8WMVL66;
+				DEVELOPMENT_TEAM = WY2J36F3ST;
 				INFOPLIST_FILE = MamaGram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reu.MamaGram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reu.MamaGram1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
