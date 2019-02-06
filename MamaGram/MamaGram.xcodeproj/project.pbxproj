@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15C2D97A2209DE1E00D54582 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C2D9792209DE1E00D54582 /* Http.swift */; };
+		15C2D97C220A365C00D54582 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C2D97B220A365C00D54582 /* PreviewViewController.swift */; };
 		221D8E3F47B6C843C3867084 /* Pods_MamaGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873F025CE34D63DB89F1EEB4 /* Pods_MamaGram.framework */; };
 		CF2EF70120E2A9E9006C8A26 /* FeedsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EF70020E2A9E9006C8A26 /* FeedsCell.swift */; };
 		CF2EF70320E2AC7E006C8A26 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2EF70220E2AC7E006C8A26 /* FeedsCell.xib */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15C2D9792209DE1E00D54582 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		15C2D97B220A365C00D54582 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		227C0D7A7D8DA41E07294A4B /* Pods-MamaGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamaGram/Pods-MamaGram.debug.xcconfig"; sourceTree = "<group>"; };
 		691D85BEF22AB96A4923636C /* Pods-MamaGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamaGram/Pods-MamaGram.release.xcconfig"; sourceTree = "<group>"; };
 		873F025CE34D63DB89F1EEB4 /* Pods_MamaGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +137,7 @@
 		CF2EF7B520F3FB40006C8A26 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				15C2D97B220A365C00D54582 /* PreviewViewController.swift */,
 				CF2EF7B620F3FB63006C8A26 /* CameraViewController.swift */,
 			);
 			name = Camera;
@@ -164,6 +169,7 @@
 				CF2EF7B120F3F9D0006C8A26 /* Notes */,
 				CF2EF7B020F3F983006C8A26 /* Social Media */,
 				CFD2F6EE20D3109000837117 /* Info.plist */,
+				15C2D9792209DE1E00D54582 /* Http.swift */,
 				CFD2F6E220D3109000837117 /* AppDelegate.swift */,
 				CFEB6D5B20DD6F59005C7611 /* HomeViewController.swift */,
 				CF2EF76120EC0DC6006C8A26 /* SettingsViewController.swift */,
@@ -318,6 +324,7 @@
 			files = (
 				CF2EF75620EA6226006C8A26 /* ListNotesTableViewController.swift in Sources */,
 				CF2EF75A20EA7627006C8A26 /* DisplayNoteViewController.swift in Sources */,
+				15C2D97C220A365C00D54582 /* PreviewViewController.swift in Sources */,
 				CF2EF75E20EA7EDE006C8A26 /* Date+convertToString.swift in Sources */,
 				CF2EF7B720F3FB63006C8A26 /* CameraViewController.swift in Sources */,
 				CF2EF7AE20F3EE8A006C8A26 /* TabBarController.swift in Sources */,
@@ -335,6 +342,7 @@
 				CF2EF70120E2A9E9006C8A26 /* FeedsCell.swift in Sources */,
 				CFD2F6E320D3109000837117 /* AppDelegate.swift in Sources */,
 				CFEB6D5C20DD6F59005C7611 /* HomeViewController.swift in Sources */,
+				15C2D97A2209DE1E00D54582 /* Http.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

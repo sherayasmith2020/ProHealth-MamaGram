@@ -53,7 +53,7 @@ class DisplayNoteViewController: UIViewController {
             note?.title = titleTextField.text ?? ""
             note?.content = contentTextView.text ?? ""
             note?.modificationTime = Date()
-            
+            //TODO: make a call to PUT method in Http
             CoreDataHelper.saveNote()
             
         case "save" where note == nil:
@@ -63,6 +63,9 @@ class DisplayNoteViewController: UIViewController {
             note.modificationTime = Date()
             
             CoreDataHelper.saveNote()
+            let httpNote = ["type": "note", "title": note.title, "body": note.content, "date created": note.modificationTime?.convertToString()]
+            let newHttp = Http()
+            newHttp.makePostCall(body: httpNote)
             
         case "cancel":
             print("cancel bar button item tapped")

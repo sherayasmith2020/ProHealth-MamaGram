@@ -12,8 +12,10 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let newHttp = Http()
+        newHttp.makeGetCall()
+        let newTodo: [String: Any] = ["title": "My First todo", "completed": false, "userId": 1]
+        newHttp.makePostCall(body: newTodo)
     }
 
     override func didReceiveMemoryWarning() {

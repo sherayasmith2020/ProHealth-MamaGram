@@ -66,12 +66,12 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
     }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
     {
-        let rename = renameSwipAct(index: indexPath.row)
-        let delete = deleteSwipAct(index: indexPath.row, path: indexPath)
+        let rename = renameSwipeAct(index: indexPath.row)
+        let delete = deleteSwipeAct(index: indexPath.row, path: indexPath)
         return UISwipeActionsConfiguration(actions: [delete, rename])
     }
-    ///Swip Actions
-    func renameSwipAct(index : Int) -> UIContextualAction
+    ///Swipe Actions
+    func renameSwipeAct(index : Int) -> UIContextualAction
     {
         let action = UIContextualAction(style: .normal , title: "Rename")
         {
@@ -139,7 +139,7 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
                 self.myTableView.reloadData()
         }
     }
-    func deleteSwipAct(index : Int, path : IndexPath)-> UIContextualAction
+    func deleteSwipeAct(index : Int, path : IndexPath)-> UIContextualAction
     {
         let action = UIContextualAction(style: .normal , title: "Rename")
         {
