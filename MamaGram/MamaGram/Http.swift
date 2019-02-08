@@ -90,9 +90,9 @@ class Http: NSObject {
                 print("Error: did not receive data")
                 return
             }
-            // parse the result as JSON, since that's what the API provides
+            // "parse the result as JSON, since that's what the API provides." But what if mine doesn't return JSON? It looks like I got Postman to send a response with only a string... That's really what I want!
             do {
-                guard let receivedTodo = try JSONSerialization.jsonObject(with: responseData,
+                guard let receivedTodo = try JSONSerialization.jsonObject(with: responseData, //
                                                                           options: []) as? [String: Any] else {
                                                                             print("Could not get JSON from responseData as dictionary")
                                                                             return

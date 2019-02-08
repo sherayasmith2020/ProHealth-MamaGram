@@ -70,6 +70,15 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
         let delete = deleteSwipeAct(index: indexPath.row, path: indexPath)
         return UISwipeActionsConfiguration(actions: [delete, rename])
     }
+    
+    //Date functions
+    func getDate() -> String{
+        let format = DateFormatter()
+        format.dateStyle = .medium
+        format.timeStyle = .short
+         return format.string(from: Date())
+    }
+    
     ///Swipe Actions
     func renameSwipeAct(index : Int) -> UIContextualAction
     {
@@ -98,6 +107,7 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
                 if let textFields = alert.textFields {
                     let tfa = textFields as [UITextField]
                     let text = tfa[0].text
+                    print("Text of subsequent save: " + text!)
                     let url = URL(fileURLWithPath: text!)
                     self.renameRecording(recording, to: url)
                 }}))
@@ -299,10 +309,12 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
     {
         print("\(#function)")
         
-        let format = DateFormatter()
-        format.dateStyle = .medium
-        format.timeStyle = .short
-        let currentFileName = "\(format.string(from: Date())).m4a"
+        //let format = DateFormatter()
+        //format.dateStyle = .medium
+        //format.timeStyle = .short
+        let date = getDate()
+        print(date)
+        let currentFileName = "\(date).m4a"
         print(currentFileName)
         
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -352,6 +364,10 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
             {
                 let tfa = textFields as [UITextField]
                 let text = tfa[0].text
+                print("text of initial save: " + text!)
+                let httpVoicenote = ["type": "voicenote", "title": text, "date created": self.getDate()]
+                let newHttp = Http()
+                newHttp.makePostCall(body: httpVoicenote)
                 let url = URL(fileURLWithPath: text!)
                 self.renameRecording(self.soundFileURL, to: url)
             }
